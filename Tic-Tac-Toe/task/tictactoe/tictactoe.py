@@ -1,5 +1,5 @@
 # write your code here
-def printTTT(tic, countO = 0, countX = 0):
+def printTTT(tic, countO=0, countX=0):
     is_emp = False
     print("---------")
     for i in range(3):
