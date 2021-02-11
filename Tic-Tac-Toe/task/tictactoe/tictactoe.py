@@ -76,12 +76,12 @@ def winner(tic):
     return out
 
 
+# Main Code
 tic = [" "]*9
 countO = 0
 countX = 0
-is_empty = False
 dat = 'X'
-move = 0;
+move = 0
 countO, countX, is_empty = printTTT(tic, countO, countX)
 
 while 1:
@@ -99,79 +99,3 @@ while 1:
         dat = 'O'
     else:
         dat = 'X'
-
-
-
-
-
-
-
-
-
-
-
-"""
-if is_empty:
-    while 1:
-        x = input("Enter the coordinates: ").split()
-        if len(x) == 1:
-            print("You should enter numbers!")
-            continue
-        else:
-            x, y = x[0], x[1]
-        if not x.isnumeric() or not y.isnumeric():
-            print("You should enter numbers!")
-            continue
-        x, y = int(x) - 1, int(y) - 1
-        loc = 3 * x + y
-        if loc < 0 or loc > 8 or y > 2:
-            print("Coordinates should be from 1 to 3!")
-            continue
-        if tic[loc] != "_":
-            print("This cell is occupied! Choose another one!")
-            continue
-        tic[loc] = "X"
-        if 0 <= loc <= 8:
-            break
-"""
-"""print("---------")
-for i in range(3):
-    print("|", end=" ")
-    for t in range(3):
-        print(tic[t + 3 * i], end=" ")
-        if tic[t + 3 * i] == "_":
-            is_empty = True
-        if tic[t + 3 * i] == "O":
-            countO += 1
-        if tic[t + 3 * i] == "X":
-            countX += 1
-    print("|")
-print("---------")
-"""
-"""op = winner(tic)
-if abs(countO - countX) >= 2:
-    print("Impossible")
-elif op == "Impossible":
-    print(op)
-elif not op:
-    if not is_empty:
-        print("Draw")
-    else:
-        print("Game not finished")
-else:
-    print(op + " wins")"""
-
-"""print("---------")
-for i in range(3):
-    print("|", end=" ")
-    for t in range(3):
-        print(tic[t + 3 * i], end=" ")
-        if tic[t + 3 * i] == "_":
-            is_empty = True
-        if tic[t + 3 * i] == "O":
-            countO += 1
-        if tic[t + 3 * i] == "X":
-            countX += 1
-    print("|")
-print("---------")
-"""
