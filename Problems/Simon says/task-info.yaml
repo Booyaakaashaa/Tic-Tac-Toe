@@ -1,0 +1,14 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    def what_to_do(instructions):
+        ...
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9560#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Fri, 12 Feb 2021 21:20:03 UTC
+record: -1
